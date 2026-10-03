@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GameRoom is a party game collection for a shared screen and phones as controllers.">
+    <title>GameRoom — Next Version Ventures</title>
+    <style>
+      :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172033; background: #f8f7f2; }
+      * { box-sizing: border-box; }
+      body { margin: 0; line-height: 1.6; }
+      a { color: #2645c9; }
+      .site-header { background: #102044; color: #fffaf0; }
+      .site-header__content, main { max-width: 68rem; margin: 0 auto; padding-left: 1.25rem; padding-right: 1.25rem; }
+      .site-header__content { min-height: 4.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+      .brand { color: inherit; text-decoration: none; font-size: 1.05rem; font-weight: 750; letter-spacing: .02em; }
+      .site-header nav { display: flex; gap: 1rem; }
+      .site-header nav a { color: #fffaf0; text-underline-offset: .2em; }
+      main { padding-top: 3rem; padding-bottom: 4rem; }
+      .hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(18rem, .9fr); align-items: center; gap: 3rem; padding: 1rem 0 4rem; }
+      .eyebrow { margin: 0 0 .8rem; color: #526078; font-size: .78rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+      h1, h2 { color: #102044; line-height: 1.14; }
+      h1 { margin: 0; font-size: clamp(3rem, 8vw, 5.5rem); letter-spacing: -.055em; }
+      h2 { margin: 0 0 .65rem; font-size: 1.35rem; }
+      .lede { max-width: 35rem; margin: 1.25rem 0 0; color: #42506a; font-size: 1.15rem; }
+      .actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }
+      .button { display: inline-block; padding: .7rem 1rem; border: 1px solid #102044; border-radius: .5rem; background: #102044; color: #fffaf0; font-weight: 700; text-decoration: none; }
+      .button--quiet { background: transparent; color: #102044; }
+      .button--coming-soon { border-color: #a7acb7; background: #e5e5e0; color: #526078; cursor: default; }
+      .feature-graphic { display: block; width: 100%; border: 1px solid #d8d7d1; border-radius: 1rem; box-shadow: .75rem .75rem 0 #102044; transform: rotate(2deg); }
+      .section { margin-top: 1.5rem; }
+      .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+      .card { min-height: 100%; padding: 1.5rem; border: 1px solid #d8d7d1; border-radius: .75rem; background: #fffdf8; }
+      .card p { margin: 0; color: #526078; }
+      .card p + p { margin-top: 1rem; }
+      footer { border-top: 1px solid #d8d7d1; color: #526078; }
+      .footer-content { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem; }
+      @media (max-width: 44rem) { .hero { grid-template-columns: 1fr; gap: 2rem; padding-bottom: 3rem; } .screen { max-width: 25rem; margin: 0 auto; } .cards { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__content">
+        <a class="brand" href="/">NEXT VERSION VENTURES</a>
+        <nav aria-label="Primary navigation">
+          <a href="/">Home</a>
+          <a href="gameroom-privacy-policy.html">Privacy</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">A party game collection</p>
+          <h1 id="page-title">GameRoom</h1>
+          <p class="lede">One shared screen. Everyone’s phones. A room full of games that make it easy to laugh, draw, bluff, and make a little chaos together.</p>
+          <div class="actions">
+            <a class="button" href="https://gameroom.emugamer.com">Play GameRoom</a>
+            <span class="button button--coming-soon" aria-label="GameRoom will be available on Steam soon">Coming soon on Steam</span>
+            <a class="button button--quiet" href="gameroom-privacy-policy.html">Privacy policy</a>
+          </div>
+        </div>
+        <img class="feature-graphic" src="gameroom-feature-graphic.png" alt="GameRoom logo beside a retro television showing a selection of party games">
+      </section>
+
+      <section class="section" aria-labelledby="how-title">
+        <p class="eyebrow">How it works</p>
+        <div class="cards">
+          <article class="card"><h2 id="how-title">1. Start a room</h2><p>Open GameRoom on the shared host screen and create a room for your group.</p></article>
+          <article class="card"><h2>2. Join by phone</h2><p>Friends scan or enter the room code on their phones. No extra controller required.</p></article>
+          <article class="card"><h2>3. Pick a game</h2><p>Choose an original minigame and let the room decide who has the sharpest ideas, fastest guesses, or strangest pitch.</p></article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="games-title">
+        <p class="eyebrow">Games for the group</p>
+        <div class="cards">
+          <article class="card"><h2 id="games-title">Think together</h2><p>Find the surprising answer you share in Great Minds, solve hidden-order puzzles in Fit 3, or plot a word’s place in Coordinates.</p></article>
+          <article class="card"><h2>Make something weird</h2><p>Build a company from scratch in Pitchroom, fill in wild prompts in Blanked Out, or trade strokes in Inkdrop.</p></article>
+          <article class="card"><h2>Bring the whole room</h2><p>GameRoom is designed for a shared screen and a group of phones—perfect for a living room, game night, or a casual hangout.</p></article>
+        </div>
+      </section>
+    </main>
+    <footer><div class="footer-content">© Next Version Ventures</div></footer>
+  </body>
+</html>
