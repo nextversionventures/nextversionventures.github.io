@@ -1,16 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="L_iQ__PoEE6mficGx5yKQbpLSniQ64WZEQczT_8JU_g" />
-    <title>Next Version Ventures Homepage</title>
-</head>
-<body>
-    <h1>Welcome</h1>
-    <p>Official website for Next Version Ventures</p>
-    
-    <h2>Contact & Support</h2>
-    <p>Email: nextversionventures@gmail.com</p>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="L_iQ__PoEE6mficGx5yKQbpLSniQ64WZEQczT_8JU_g">
+    <meta name="description" content="Next Version Ventures creates playful tools and games, including Go The Distance.">
+    <title>Next Version Ventures</title>
+    <style>
+      :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172033; background: #f8f7f2; }
+      * { box-sizing: border-box; }
+      body { margin: 0; line-height: 1.6; }
+      a { color: #2645c9; }
+      .site-header { background: #102044; color: #fffaf0; }
+      .site-header__content, main { max-width: 68rem; margin: 0 auto; padding-left: 1.25rem; padding-right: 1.25rem; }
+      .site-header__content { min-height: 4.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+      .brand { color: inherit; text-decoration: none; font-size: 1.05rem; font-weight: 750; letter-spacing: .02em; }
+      .site-header nav { display: flex; gap: 1rem; }
+      .site-header nav a { color: #fffaf0; text-underline-offset: .2em; }
+      main { padding-top: 3rem; padding-bottom: 4rem; }
+      .hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(20rem, 1.08fr); align-items: center; gap: 3rem; padding: 1rem 0 4rem; }
+      .eyebrow { margin: 0 0 .8rem; color: #526078; font-size: .78rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+      h1, h2 { color: #102044; line-height: 1.14; }
+      h1 { margin: 0; font-size: clamp(2.6rem, 7vw, 5rem); letter-spacing: -.045em; }
+      h2 { margin: 0 0 .5rem; font-size: 1.35rem; }
+      .lede { max-width: 34rem; margin: 1.25rem 0 0; color: #42506a; font-size: 1.15rem; }
+      .hero img { display: block; width: 100%; border: 1px solid #d8d7d1; border-radius: 1rem; box-shadow: 0 1rem 2.5rem rgb(16 32 68 / 18%); }
+      .products { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+      .card { min-height: 100%; padding: 1.5rem; border: 1px solid #d8d7d1; border-radius: .75rem; background: #fffdf8; }
+      .card p { margin: 0; color: #526078; }
+      .card p + p { margin-top: 1rem; }
+      footer { border-top: 1px solid #d8d7d1; color: #526078; }
+      .footer-content { max-width: 68rem; margin: 0 auto; padding: 1.5rem 1.25rem; }
+      @media (max-width: 44rem) { .hero { grid-template-columns: 1fr; gap: 2rem; padding-bottom: 3rem; } .hero img { order: -1; } .products { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__content">
+        <a class="brand" href="/">NEXT VERSION VENTURES</a>
+        <nav aria-label="Primary navigation">
+          <a href="#go-the-distance">Go The Distance</a>
+          <a href="privacy-policy.html">Privacy</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="site-title">
+        <div>
+          <p class="eyebrow">Independent games &amp; products</p>
+          <h1 id="site-title">Next Version Ventures</h1>
+          <p class="lede">We make thoughtful, playful experiences that help people go a little further.</p>
+        </div>
+        <img src="go-the-distance-feature-graphic.png" alt="Go The Distance logo over a mountainous game map">
+      </section>
+
+      <section id="go-the-distance" aria-labelledby="gtd-title">
+        <p class="eyebrow">Now in development</p>
+        <div class="products">
+          <article class="card">
+            <h2 id="gtd-title">Go The Distance</h2>
+            <p>A social fitness game where three players race across a shared map by walking, running, cycling, and swimming.</p>
+          </article>
+          <aside class="card" aria-label="Support and privacy">
+            <h2>Support &amp; privacy</h2>
+            <p>Questions? Email <a href="mailto:nextversionventures@gmail.com">nextversionventures@gmail.com</a>.</p>
+            <p><a href="privacy-policy.html">Read the Go The Distance Privacy Policy</a></p>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">© Next Version Ventures</div>
+    </footer>
+  </body>
 </html>
